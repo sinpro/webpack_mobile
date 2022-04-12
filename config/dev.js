@@ -1,0 +1,19 @@
+const host={
+	sat:'http://14.0.33.11:9001',
+	uat:'http://14.0.33.22:9001',
+	dev:'http://14.0.33.23:9001'
+};
+module.exports={
+	port:8823,
+	proxy:{
+		'(/basic/**)|(/permission/**)|(/trade/**)':{
+			target:host.uat,
+			changeOrigin:true,
+			pathRewrite:{
+				'^/basic':''
+			}
+		},
+	},
+	overLay:false,
+	autoOpenBrowser:false
+}
