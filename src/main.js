@@ -4,10 +4,10 @@ import router from './router';
 import store from 'src/store';
 
 // 挂在公共组件到全局
-import commonComponents from 'src/components/index.js';
+import commonComponents from 'src/components';
 Vue.use(commonComponents);
-import { microdoneH5 } from 'components/common/microdoneH5';
-Vue.prototype.$microdoneH5 = microdoneH5;
+import  {initMicrodoneH5}  from 'components/common/microdoneH5';
+Vue.prototype.$initMicrodoneH5 = initMicrodoneH5;
 
 
 // demo环境

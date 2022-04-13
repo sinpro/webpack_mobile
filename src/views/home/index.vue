@@ -1,7 +1,7 @@
 <template>
   <div class="home" >
-    <!-- <microdoneH5></microdoneH5> -->
-    密码键盘：<input type="text" @focus="microBlur" id="kb1">
+    <microdoneH5></microdoneH5>
+    <!-- 密码键盘：<input type="text" @focus="microBlur" id="kb1"> -->
   </div>
 </template>
 <script>
@@ -19,7 +19,7 @@ export default {
   methods:{
     microBlur(){
       console.log(111)
-      this.$microdoneH5('kb1',1)
+      this.$initMicrodoneH5('kb1',1)
     }
   }
 };

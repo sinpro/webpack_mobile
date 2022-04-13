@@ -45,8 +45,8 @@ window.onload = function() {
     kb.generate();
   }, 100);
 };
-export async function microdoneH5(id,type=1){
+export function initMicrodoneH5(id,type=1){
     console.log(3333)
     //初始化密码卫士,绑定键盘对象。数字参数：0代表全键盘，1代表数字键盘
-    await passGuard1.generate(id, kb, "passGuard1", type);
+    passGuard1.generate(id, kb, "passGuard1", type);
 }
